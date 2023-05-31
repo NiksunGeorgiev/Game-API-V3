@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-const gameRouter2 = require("./routes/gameRouter2");
+const gameRouter2 = require("./routes/gameRouter");
 
 app.use(gameRouter2);
 

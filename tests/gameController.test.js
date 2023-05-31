@@ -1,13 +1,13 @@
 const path = require("path");
 const request = require("supertest");
 const express = require("express");
-const gameRouter2 = require("../routes/gameRouter2");
+const gameRouter = require("../routes/gameRouter");
 const app = express();
 app.use(express.json());
-app.use(gameRouter2);
+app.use(gameRouter);
 const DataStorage = require("../models/dataStorage");
 const Deck = require("../models/deck");
-const Card = require("../models/card");
+
 const filepath = path.resolve(__dirname, "..", "data", "game-data.json");
 const dataStorage = new DataStorage(filepath);
 
