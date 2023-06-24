@@ -3,9 +3,9 @@ const app = express();
 
 app.use(express.json());
 
-const gameRouter2 = require("./routes/gameRouter");
+const gameRouter = require("./routes/gameRouter");
 
-app.use(gameRouter2);
+app.use(gameRouter);
 
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
